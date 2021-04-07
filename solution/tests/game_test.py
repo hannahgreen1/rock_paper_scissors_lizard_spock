@@ -9,27 +9,27 @@ class TestGame(unittest.TestCase):
         self.paper = Player("Leonard", "paper")
         self.scissors = Player("Howard", "scissors")
 
-    def test_decide_rock_over_scissors(self):
+    def test_decide_rock_and_scissors(self):
         result = get_preferred_option(self.scissors, self.rock)
         self.assertEqual(self.rock, result)
         
-    def test_decide_rock_over_scissors__order_reversed(self):
+    def test_decide_rock_and_scissors__order_reversed(self):
         result = get_preferred_option(self.rock, self.scissors)
         self.assertEqual(self.scissors, result)
         
-    def test_decide_scissors_over_paper(self):
+    def test_decide_scissors_and_paper(self):
         result = get_preferred_option(self.paper, self.scissors)
         self.assertEqual(self.scissors, result)
 
-    def test_decide_scissors_over_paper__order_reversed(self):
+    def test_decide_scissors_and_paper__order_reversed(self):
         result = get_preferred_option(self.scissors, self.paper)
         self.assertEqual(self.paper, result)
         
-    def test_decide_paper_over_rock(self):
+    def test_decide_paper_and_rock(self):
         result = get_preferred_option(self.rock, self.paper)
         self.assertEqual(self.paper, result)
 
-    def test_decide_paper_over_rock__order_reversed(self):
+    def test_decide_paper_and_rock__order_reversed(self):
         result = get_preferred_option(self.paper, self.rock)
         self.assertEqual(self.rock, result)
 

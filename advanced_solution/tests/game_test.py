@@ -13,22 +13,22 @@ class TestGame(unittest.TestCase):
 
 #### Rock wins
 
-    def test_decide_rock_over_scissors(self):
+    def test_decide_rock_and_scissors(self):
         result = get_preferred_option(self.scissors, self.rock)
         self.assertEqual(self.rock, result)
         
 
-    def test_decide_rock_over_scissors__order_reversed(self):
+    def test_decide_rock_and_scissors__order_reversed(self):
         result = get_preferred_option(self.rock, self.scissors)
         self.assertEqual(self.scissors, result)
     
 
-    def test_decide_rock_over_lizard(self):
+    def test_decide_rock_and_lizard(self):
         result = get_preferred_option(self.lizard, self.rock)
         self.assertEqual(self.rock, result)
         
 
-    def test_decide_rock_over_lizard__order_reversed(self):
+    def test_decide_rock_and_lizard__order_reversed(self):
         result = get_preferred_option(self.rock, self.lizard)
         self.assertEqual(self.lizard, result)
 
@@ -36,88 +36,88 @@ class TestGame(unittest.TestCase):
 #### Scissors wins  
 
 
-    def test_decide_scissors_over_paper(self):
+    def test_decide_scissors_and_paper(self):
         result = get_preferred_option(self.paper, self.scissors)
         self.assertEqual(self.scissors, result)
 
 
-    def test_decide_scissors_over_paper__order_reversed(self):
+    def test_decide_scissors_and_paper__order_reversed(self):
         result = get_preferred_option(self.scissors, self.paper)
         self.assertEqual(self.paper, result)
     
 
-    def test_decide_scissors_over_lizard(self):
+    def test_decide_scissors_and_lizard(self):
         result = get_preferred_option(self.lizard, self.scissors)
         self.assertEqual(self.scissors, result)
 
 
-    def test_decide_scissors_over_lizard__order_reversed(self):
+    def test_decide_scissors_and_lizard__order_reversed(self):
         result = get_preferred_option(self.scissors, self.lizard)
         self.assertEqual(self.lizard, result)
 
 
 #### Paper wins        
     
-    def test_decide_paper_over_rock(self):
+    def test_decide_paper_and_rock(self):
         result = get_preferred_option(self.rock, self.paper)
         self.assertEqual(self.paper, result)
 
 
-    def test_decide_paper_over_rock__order_reversed(self):
+    def test_decide_paper_and_rock__order_reversed(self):
         result = get_preferred_option(self.paper, self.rock)
         self.assertEqual(self.rock, result)
 
 
-    def test_decide_paper_over_spock(self):
+    def test_decide_paper_and_spock(self):
         result = get_preferred_option(self.spock, self.paper)
         self.assertEqual(self.paper, result)
 
 
-    def test_decide_paper_over_spock__order_reversed(self):
+    def test_decide_paper_and_spock__order_reversed(self):
         result = get_preferred_option(self.paper, self.spock)
         self.assertEqual(self.spock, result)
 
 
 #### Spock wins
 
-    def test_decide_spock_over_rock(self):
+    def test_decide_spock_and_rock(self):
         result = get_preferred_option(self.rock, self.spock)
         self.assertEqual(self.spock, result)
 
 
-    def test_decide_spock_over_rock__order_reversed(self):
+    def test_decide_spock_and_rock__order_reversed(self):
         result = get_preferred_option(self.spock, self.rock)
         self.assertEqual(self.rock, result)
 
 
-    def test_decide_spock_over_scissors(self):
+    def test_decide_spock_and_scissors(self):
         result = get_preferred_option(self.rock, self.spock)
         self.assertEqual(self.spock, result)
 
 
-    def test_decide_spock_over_scissors__order_reversed(self):
+    def test_decide_spock_and_scissors__order_reversed(self):
         result = get_preferred_option(self.spock, self.scissors)
         self.assertEqual(self.scissors, result)
 
 
 #### Lizard wins
 
-    def test_decide_lizard_over_spock(self):
+    def test_decide_lizard_and_spock(self):
         result = get_preferred_option(self.lizard, self.spock)
         self.assertEqual(self.spock, result)
 
 
-    def test_decide_lizard_over_spock__order_reversed(self):
+    def test_decide_lizard_and_spock__order_reversed(self):
         result = get_preferred_option(self.spock, self.lizard)
         self.assertEqual(self.lizard, result)
 
 
-    def test_decide_lizard_over_paper(self):
+    def test_decide_lizard_and_paper(self):
         result = get_preferred_option(self.lizard, self.paper)
         self.assertEqual(self.paper, result)
 
 
-    def test_decide_lizard_over_paper__order_reversed(self):
+    def test_decide_lizard_and_paper__order_reversed(self):
         result = get_preferred_option(self.paper, self.lizard)
         self.assertEqual(self.lizard, result)
     
