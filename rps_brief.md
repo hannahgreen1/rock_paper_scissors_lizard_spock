@@ -20,12 +20,9 @@ You should write tasks for all classes and functions you create. Make sure that 
 ### MVP
 
 
-Create a class `Game`. `Game`s take in a `player_1`, and a `player_2`.
+Create a file `Game`. `Game`s has a function that takes in a `player_1` and a `player_2` objects and returns the preferred task based on the `gesture` of the `Player`:
 
-Create a class `Player`. `Player` has a `name`, and a `gesture_choice`.
-
-Create a module `play_game`. This should contain a function `play_rps` which takes in two `Player` objects and returns the preferred task based on the `gesture_choice` of the `Player`:
-
+Create a class `Player`. `Player` has a `name`, and a `gesture`.
 
 Use TDD, creating as many tests as you think you will need.
 
